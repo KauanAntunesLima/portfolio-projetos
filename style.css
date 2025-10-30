@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('./img/blue-5992940_1280.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #f5f5f5;
+    line-height: 1.6;
+    padding: 0 1rem;
+    position: relative;
+    z-index: 1;
+  }
+  
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #00d8ff;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  
+  p {
+    text-align: center;
+    margin: 1rem auto;
+    max-width: 700px;
+    color: #ccc;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #00d8ff;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  ul, li {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .project-card {
+    background-color: rgba(18, 18, 18, 0.85);
+    border: 1px solid #1f1f1f;
+    padding: 1.5rem;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 15px rgba(0, 216, 255, 0.3);
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 2px solid #00d8ff;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-image:hover {
+    transform: scale(1.05);
+  }
+  
+  .project-card h3 {
+    color: #fff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .tech-used {
+    color: #00d8ff;
+    font-weight: 600;
+  }
+  
+  .btn-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #00d8ff;
+    border-radius: 6px;
+    color: #00d8ff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-link:hover {
+    background-color: #00d8ff;
+    color: #000;
+  }
+  
+  .item-list {
+    margin-bottom: 2rem;
+  }
+  
+  .item-list h3 {
+    color: #00d8ff;
+    border-left: 4px solid #00d8ff;
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .item {
+    background-color: rgba(18, 18, 18, 0.85);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .item h4 {
+    color: #fff;
+  }
+  
+  .subtitle {
+    color: #ccc;
+    font-size: 0.9rem;
+  }
+  
+  .profile-photo {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .profile-photo img {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #00d8ff;
+    box-shadow: 0 0 15px rgba(0, 216, 255, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .profile-photo img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 216, 255, 0.6);
+  }
+  
+  .footer {
+    background-color: rgba(18, 18, 18, 0.85);
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: 3rem;
+    border-top: 1px solid #1f1f1f;
+  }
+  
+  .contact-info span {
+    display: block;
+    color: #ccc;
+    margin: 0.3rem 0;
+  }
+  
+  .social-links a {
+    color: #00d8ff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #fff;
+  }
+  
+  .copyright {
+    color: #777;
+    font-size: 0.85rem;
+    margin-top: 1.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.6rem; }
+    .project-card { padding: 1rem; }
+    .project-image { height: 150px; }
+  }
+  
